@@ -1,0 +1,2 @@
+# Bakalaurodarbas
+Bakalauro darbas
