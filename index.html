@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mėnuo su IT</title>
+    <link rel="stylesheet" type="text/css" href="stilius.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+
+</head>
+ <h1>BAKALAURO DARBAS</h1>
+<body>
+   
+    <div class="ivedimai">
+        <div class="ivedimas">
+            <span>Pasirink kada būsi užimtas kitais dalykais (paskaitos, būreliai, etc.): VIENODAS užimtumas kiekvieną savaitės dieną arba INDIVIDUALUS kiekvienai projekto dienai</span> 
+        </div>
+        <div class="selector">
+            <input type="checkbox" id="toggle" class="toggle-checkbox">
+<label class="toggle-label" for="toggle">
+            <div class="toggle-text">
+                <div class="text text-manual">Vienodas</div>
+                <div class="text text-weekends">Individualus</div>
+            </div>
+            <div class="toggle-button"></div>
+        </label>
+        </div>
+        <div class="ivedimas">
+            
+            <span>Termino pabaiga</span>
+            <input type="date" id="datosivedimas" min="" >
+            
+        </div>
+        
+        <div class="ivedimas">
+            <span>Visos Valandos</span>
+            <input type="number" min="0" id="tekstoivedimas" placeholder="Iveskite visų bakalauro darbui reikiamų valandų kiekį!">
+            
+        </div> 
+        
+        
+        
+        <div class="ivedimas">
+            
+            <div id="datostekstoivedimas">
+
+                <button id="pirmyn">▲</button>
+                <div id="ivedimoskilties"> 
+                    
+                    <div id="input-group">
+                        <div class="input-group">
+                        <div id="weekday-display" class="form-control">Pirmadienis</div>
+                        <input id="weekday-value-input" type="number" min="0" max="16" value="0" class="form-control" />
+                    </div>
+                    </div>
+                    <div id="ivedimas"> </div> 
+                </div>
+                <button id="atgal">▼</button>
+            </div>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <p id="modaltekstas"></p>
+          <label for="idetisavaitgalius">
+            <span>Papildomi parametrai :</span> <br><br>
+            <input type="checkbox" id="pridetisavaitgalius">
+            Pridėti savaitgalius 
+          </label>
+          <div class="modal-buttons">
+            <button id="modalatsaukti">Atšaukti</button>
+            <button id="modalsutikti">Sutikti</button>
+          </div>
+        </div>
+      </div>
+    <button id="skaiciuoti" disabled>Skaičiuoti</button>
+    <script src="main.js"></script>
+</body>
+</html>
