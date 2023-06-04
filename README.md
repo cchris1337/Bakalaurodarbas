@@ -24,7 +24,9 @@ Valandų skaičiavimas:
 	vidutinė valandų per dieną skaičius (x) yra tiesiog bendras darbo valandų skaičius padalintas iš darbo dienų skaičiaus.
 	Valandų priskyrimas: Kiekvienai darbo dienai priskiriama vidutinė valandų skaičius. Jei diena nėra savaitgalis arba šventinė diena ir jei darbo ir poilsio laikotarpis neviršija 24 valandų,
 	skaičiuojama, kiek valandų galima priskirti tam tikrai dienai.
-	Valandų reguliavimas: Atsižvelgiama į ankstesnę dieną, kad užtikrintumėte, jog intensyvesnės dienos būtų mažiau užkrautos. Jei ankstesnė diena buvo mažiau užimta,
+Valandų reguliavimas: 
+
+	Atsižvelgiama į ankstesnę dieną, kad užtikrintumėte, jog intensyvesnės dienos būtų mažiau užkrautos. Jei ankstesnė diena buvo mažiau užimta,
 	dalis valandų yra perkeliamos iš dabartinės dienos į ankstesnę, ir atvirkščiai. Reguliavimas yra atliekamas pagal nustatytus procentus.
 	Poilsio dienų valandų priskyrimas: Jei diena yra savaitgalis ar šventinė diena, priskiriamas nulis valandų. Jei vis dėlto liko laisvų valandų, jos yra priskiriamos prieš tai buvusiai dienai.
 	Galutinė patikra: Patikrinama, ar priskirtų valandų suma yra lygi bendram darbo valandų skaičiui. Jei suma yra mažesnė, rodomas pranešimas "Nepakanka valandų".
