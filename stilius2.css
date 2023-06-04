@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+    padding: 0;
+
+}
+.boxed-text {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+}
+#summary {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #888888;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+#kalendorius {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1.2em;
+    font-size: 0.85em;
+    padding: 20px;
+}
+
+h1 {
+    background-color: #1e1c1c;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+
+
+.kalendorius-day {
+    border: 1px solid #ccc;
+    padding: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    box-shadow: 0px 0px 10px #888888;
+}
+
+.kalendorius-day span {
+    margin-top: 0.5em;
+}
+
+.holiday {
+    background-color: #53359a;
+}
+
+.weekend {
+    background-color: #213c72;
+}
